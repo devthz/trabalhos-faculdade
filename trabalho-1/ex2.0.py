@@ -7,18 +7,24 @@ while True:
     x.append(i)
     count += 1
     if count >= 3:
-        break
+        print(f"Valores adicionados à variavel X: {count}")
+        i = input('Deseja adicionar mais um valor para X? S/N \n>> ')
+        if i == "S":
+            continue
+        if i == "N":
+            break
+        else:
+            print('Opção inválida, tente novamente!')
     
 for i in x:
     a = 9*i + 9*i - 9
     y.append(a)
 
-print(
-    f"Valores de Y em relação a expressão f(x)= 9x+9x-9:\n"
-    f"{y[0]}\n"
-    f"{y[1]}\n"
-    f"{y[2]}"
-) 
+print("Valores de Y em relação a expressão f(x)= 9x+9x-9:5")
+for a in y:
+    print(
+        f"{a}"
+    ) 
 plt.scatter(x,y, label="Pares Ordenados (X,Y)")
 plt.plot(x,y,"-r", label="Reta da função")
 plt.legend(loc="upper left")
