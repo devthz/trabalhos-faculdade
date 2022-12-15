@@ -1,10 +1,10 @@
 #IMPORTAÇÃO DAS BIBLIOTECAS
 import pandas as pd
-from google.colab import drive, files
+#from google.colab import drive, files
 from pandas_profiling import ProfileReport
 
 #IMPORTANDO O ARQUIVO "STORES.csv"
-drive.mount('/content/drive')
+#drive.mount('/content/drive')
 df = pd.read_csv('/content/drive/MyDrive/stores.csv')
 
 #RENOMEANDO TODAS AS COLUNAS DO ARQUIVO
