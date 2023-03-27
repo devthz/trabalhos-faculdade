@@ -20,7 +20,7 @@ for i in x:
     a = 9*i + 9*i - 9
     y.append(a)
 
-print("Valores de Y em relação a expressão f(x)= 9x+9x-9:5")
+print("Valores de Y em relação a expressão f(x)= 9x+9x-9: ")
 for a in y:
     print(
         f"{a}"
